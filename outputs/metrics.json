@@ -1,13 +1,30 @@
 {
-  "baseline": {
-    "mae": 1571.69,
-    "rmse": 2035.76,
-    "mape": 59.37
+  "variants": {
+    "baseline_lag1": {
+      "mae": 1571.69,
+      "rmse": 2035.76,
+      "mape": 59.37,
+      "r2": -0.513
+    },
+    "ohe_scaler": {
+      "mae": 1187.07,
+      "rmse": 1526.88,
+      "mape": 44.81,
+      "r2": 0.149
+    },
+    "ohe_raw": {
+      "mae": 1187.07,
+      "rmse": 1526.88,
+      "mape": 44.81,
+      "r2": 0.149
+    },
+    "numeric_scaler": {
+      "mae": 1252.37,
+      "rmse": 1602.01,
+      "mape": 43.69,
+      "r2": 0.063
+    }
   },
-  "model": {
-    "mae": 1147.22,
-    "rmse": 1485.67,
-    "mape": 41.92
-  },
+  "best": "ohe_scaler",
   "test_days": 120
 }
