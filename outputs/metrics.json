@@ -1,30 +1,44 @@
 {
   "variants": {
     "baseline_lag1": {
-      "mae": 1571.69,
-      "rmse": 2035.76,
-      "mape": 59.37,
-      "r2": -0.513
+      "mae": 1584.08,
+      "rmse": 2056.15,
+      "mape": 59.4,
+      "r2": -0.535
     },
-    "ohe_scaler": {
-      "mae": 1187.07,
-      "rmse": 1526.88,
-      "mape": 44.81,
-      "r2": 0.149
+    "gradient_boosting": {
+      "mae": 1159.94,
+      "rmse": 1513.26,
+      "mape": 40.76,
+      "r2": 0.169
     },
-    "ohe_raw": {
-      "mae": 1187.07,
-      "rmse": 1526.88,
-      "mape": 44.81,
-      "r2": 0.149
+    "hist_gradient_boosting": {
+      "mae": 1230.9,
+      "rmse": 1617.5,
+      "mape": 45.64,
+      "r2": 0.05
     },
-    "numeric_scaler": {
-      "mae": 1252.37,
-      "rmse": 1602.01,
-      "mape": 43.69,
-      "r2": 0.063
+    "lightgbm": {
+      "mae": 1163.42,
+      "rmse": 1515.7,
+      "mape": 42.01,
+      "r2": 0.166
     }
   },
-  "best": "ohe_scaler",
-  "test_days": 120
+  "cv": {
+    "gradient_boosting": {
+      "mae_mean": 992.91,
+      "mae_std": 254.83
+    },
+    "hist_gradient_boosting": {
+      "mae_mean": 965.82,
+      "mae_std": 241.81
+    },
+    "lightgbm": {
+      "mae_mean": 958.23,
+      "mae_std": 249.49
+    }
+  },
+  "best": "lightgbm",
+  "test_days": 116
 }
