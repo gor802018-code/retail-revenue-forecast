@@ -1,0 +1,10 @@
+.idea/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+data/raw/online_retail_ii.csv
+outputs/*.tmp
+*.log
